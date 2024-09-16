@@ -1,19 +1,24 @@
+
+.button-container {
+    display: flex;    
+    margin-top: auto;
+    margin-top: auto; /* Pushes this container to the bottom */
+}
+
 .button-link {
-    line-height: 1.6; 
     display: block;
-    background-color: #ffa500;
+    background-color: #952daf;
     color: white;
     padding: 10px;
-    border-radius: 15px; 
-    text-align: center;
-    align-content: center;
-    margin-top: 15px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 10px; 
+    margin: 10px;
+    font-size: x-large;
+    transition: transform 0.5s;
+    align-self: flex-end;
 }
 
 .button-link:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Style for the switch */
@@ -21,7 +26,7 @@
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1000;
+    z-index: 1;
     width: 60px;
     height: 34px;
 }
@@ -57,7 +62,7 @@
 }
 
 input:checked + .slider {
-    background-color: #5520b9;
+    background-color: #952daf;
 }
 
 input:checked + .slider:before {
