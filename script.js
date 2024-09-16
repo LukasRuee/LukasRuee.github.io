@@ -27,30 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleSlider = document.getElementById('style-toggle-slider');
-    const projectSection = document.getElementById('projects');
-    const modeIndicator = document.getElementById('mode-indicator');
-
-    function updateView() {
-        if (toggleSlider.checked) {
-            projectSection.classList.remove('project-card-view');
-            projectSection.classList.add('project-list-view');
-            modeIndicator.textContent = 'List View';
-        } else {
-            projectSection.classList.remove('project-list-view');
-            projectSection.classList.add('project-card-view');
-            modeIndicator.textContent = 'Card View'; 
-        }
-    }
-
-    toggleSlider.addEventListener('change', updateView);
-
-    projectSection.classList.add('project-card-view');
-    modeIndicator.textContent = 'Card View';
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const imgs = document.querySelectorAll('.project img');
 
