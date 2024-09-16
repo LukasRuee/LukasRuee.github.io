@@ -1,29 +1,14 @@
 /* General styling */
 header {
     font-family: 'Roboto', sans-serif;
-    background-color: #333;
+    background-color: #222;
     color: white;
     padding: 20px;
     text-align: center;
-    border-bottom:8px solid #444;
-}
-nav{
-    flex-direction: column;
-}
-nav ul {
-    padding: auto;
-    margin: auto;
-    list-style-type: none;
+    border-bottom:8px dashed #564875;
 }
 nav ul li {
     display: inline-block;
-    margin: 0 20px;
-}
-nav ul li a {
-    color: rgb(132, 86, 170);
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -35,37 +20,58 @@ section {
     padding: 10px;
     margin: 10px;
 }
-h1, h2, h3, h4, a{
+h1, h2, h3, h4{
     color: #c7c7c7;
 }
-p, ul, li {
+p, a{
     font-weight: 700;
     line-height: 1.6;
     margin-bottom: 20px; 
     color: #a0a0a0;
 }
-p{
-    width: 75%;
+li{
+    color: #a0a0a0;
 }
-
 /* Box styling */
-.text-box {
+.text-box, .project{
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
-    border: 2px solid #564875; 
+    border: 4px dashed #564875; 
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     width: 80%;
     margin: 0 auto 40px auto;
     
     opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    transform: translateY(25px); 
+    transition: opacity 1s ease-out, transform 1s ease-out, box-shadow 1s ease-out;
 }
 
-.text-box.in-view {
+.text-box.in-view, .project.in-view {
     opacity: 1;
     transform: translateY(0); 
+}
+
+.project:hover, .text-box:hover{
+    transform: translateY(-2.5px);
+    animation: glow linear 3s infinite;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+
+@keyframes glow { 
+    0% { 
+        border-color:#564875;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+    50% { 
+        border-color:#ab60e9;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    }
+    100% { 
+        border-color:#564875;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
 }
 
 /* Footer styling */
@@ -75,12 +81,5 @@ footer {
     padding: 30px;
     color: #aaa;
     font-size: 14px;
-    border-top:8px solid #444;
-}
-
-#contact {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    flex-wrap: wrap;
+    border-top:8px dashed #564875;
 }

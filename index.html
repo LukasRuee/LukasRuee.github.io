@@ -25,9 +25,11 @@
                 
                 <nav>
                     <ul>
-                        <li><a href="#about" class="button-link">About</a></li>
-                        <li><a href="#projects" class="button-link">Projects</a></li>
-                        <li><a href="#contact" class="button-link">Contact</a></li>
+                        <section id="button-container">
+                            <li><a href="#about" class="button-link">About</a></li>
+                            <li><a href="#projects" class="button-link">Projects</a></li>
+                            <li><a href="#contact" class="button-link">Contact</a></li>
+                        </section>
                     </ul>
                 </nav>
             </header>
@@ -35,8 +37,8 @@
             <section id="about">
                 <div class="text-box">
                     <h2>About Me</h2>
-                    <p>I'm a passionate game developer currently studying at the SAE Institute.<br>
-                    During my time at SAE, I’ve worked on several solo projects, ranging from 2D or 3D games to usefull tools.<br>
+                    <p>I'm a passionate game developer currently studying at the SAE Institute.
+                    During my time at SAE, I’ve worked on several solo projects, ranging from 2D or 3D games to usefull tools.
                     My goal is to continue honing my skills and contribute to innovative game projects in the industry.</p>
                     <a href="about-me.html"><i class="fa-solid fa-arrow-right"></i> Read more</a>
                 </div>
@@ -48,16 +50,16 @@
             </section>
 
             <section>
-                
                 <section id="projects">
                     <div class="project">
                         <h3>This website</h3>
-                        <p>Using basic HTML, CSS and Javascript i created this website.</p>
-
+                        <p>Using basic HTML, CSS and Javascript i created this website. Its a page for me to show my work to the world and get people to know me.</p>
                     </div>
+
                     <div class="project">
                         <h3>Reaction Game: Simon says (TBA)</h3>
-                        <p>This game is being developed using Lua, featuring an simon says like game. It was built specifically for the PlayData console.</p>
+                        <p>This game is being developed using Lua, featuring an simon says like game. 
+                            It was built specifically for the PlayData console.</p>
                         
                         <div class="button-container">
                             <a href="https://github.com/LukasRuee/SimonSays" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
@@ -85,12 +87,12 @@
         </body>
     </main>
 
-        <footer>
-            <h2>Contact</h2>
-            <section id="contact">
-                <a href="mailto:lukas.rueegsegger@gmx.ch" class="button-link"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/lukas-r%C3%BCegsegger/" target="_blank" class="button-link"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/LukasRuee" target="_blank" class="button-link"> <i class="fa-brands fa-github"></i></a>
-            </section>
-        </footer>
+    <footer>
+        <h2>Contact</h2>
+        <div class="button-container">
+            <a href="mailto:lukas.rueegsegger@gmx.ch" class="button-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/lukas-r%C3%BCegsegger/" target="_blank" class="button-link"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/LukasRuee" target="_blank" class="button-link"> <i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </html>
