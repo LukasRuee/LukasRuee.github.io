@@ -8,74 +8,82 @@
         <meta name="description" content="My portfolio showcasing my game development projects.">
         <title>My Game Development Portfolio</title>
         <link rel="stylesheet" href="styles/normal_style.css">
-        <link rel="stylesheet" href="styles/title.css">
         <link rel="stylesheet" href="styles/project_style.css">
         <link rel="stylesheet" href="styles/interactable_Elements_style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
 
     <body>
-        <header>
-            <h1>Welcome to My Game Development Portfolio</h1>
-            
-            <nav>
-                <ul>
-                    <li><a href="#about" class="button-link">About</a></li>
-                    <li><a href="#projects" class="button-link">Projects</a></li>
-                    <li><a href="#contact" class="button-link">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <main>
+            <header>
+                <h1>Welcome to My Game Development Portfolio</h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#about" class="button-link">About</a></li>
+                        <li><a href="#projects" class="button-link">Projects</a></li>
+                        <li><a href="#contact" class="button-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <section id="about">
-            <div class="text-box">
-                <h2>About Me</h2>
-                <p>I'm a passionate game developer currently studying at the SAE Institute.<br>
-                During my time at SAE, I’ve worked on several solo projects, ranging from 2D or 3D games to usefull tools.<br>
-                My goal is to continue honing my skills and contribute to innovative game projects in the industry.</p>
-                <a href="about-me.html"><i class="fa-solid fa-arrow-right"></i> Read more</a>
-            </div>
-            
-            <div class="text-box">
-                <h2>About this website</h2>
-                <p>This website is a showcase of my work as a developer. Listed below are some of my projects.</a>
-            </div>
-        </section>
-
-        <section>
-            
-            <section id="projects">
-                <div class="project">
-                    <h3>This website</h3>
-                    <p>Using basic HTML, CSS and Javascript i created this website.</p>
-
-                </div>
-                <div class="project">
-                    <h3>Reaction Game: Simon says (TBA)</h3>
-                    <p>This game is being developed using Lua, featuring an simon says like game. It was built specifically for the PlayData console.</p>
-                    
-                    <div class="button-container">
-                        <a href="https://github.com/LukasRuee/SimonSays" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
-                        <!-- Add more button links here if needed -->
-                    </div>
+            <section id="about">
+                <div class="text-box">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate game developer currently studying at the SAE Institute.<br>
+                    During my time at SAE, I’ve worked on several solo projects, ranging from 2D or 3D games to usefull tools.<br>
+                    My goal is to continue honing my skills and contribute to innovative game projects in the industry.</p>
+                    <a href="about-me.html"><i class="fa-solid fa-arrow-right"></i> Read more</a>
                 </div>
                 
-                <div class="project">
-                    <h3>Endless Runner: Hot Score</h3>
-                    <div class="image-container">
-                        <img src="images/hot-score.JPG" alt="Project Image">
-                    </div>
-                    <p>This game was made for the 29th ScoreJam. Its an endless runner made in Unity with a online leaderboard</p>
-                    <a href="https://dionysusentertainment.itch.io/hot-score" target="_blank" class="button-link"><i class="fa-brands fa-itch-io"></i></a>
-                </div>
-                
-                <div class="project">
-                    <h3>GitLab Issue tool</h3>
-                    <img src="images/issue-tracker.JPG">
-                    <p>The tool was made for in unity to provide users a built-in method to document or manage gitlab issues</p>
+                <div class="text-box">
+                    <h2>About this website</h2>
+                    <p>This website is a showcase of my work as a developer. Listed below are some of my projects.</a>
                 </div>
             </section>
-        </section>
+
+            <section>
+                
+                <section id="projects">
+                    <div class="project">
+                        <h3>This website</h3>
+                        <p>Using basic HTML, CSS and Javascript i created this website.</p>
+
+                    </div>
+                    <div class="project">
+                        <h3>Reaction Game: Simon says (TBA)</h3>
+                        <p>This game is being developed using Lua, featuring an simon says like game. It was built specifically for the PlayData console.</p>
+                        
+                        <div class="button-container">
+                            <a href="https://github.com/LukasRuee/SimonSays" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
+                            <!-- Add more button links here if needed -->
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <h3>Endless Runner: Hot Score</h3>
+                        <div class="image-container">
+                            <img src="images/hot-score.JPG" alt="Project Image">
+                        </div>
+                        <p>This game was made for the 29th ScoreJam. Its an endless runner made in Unity with a online leaderboard</p>
+                        <a href="https://dionysusentertainment.itch.io/hot-score" target="_blank" class="button-link"><i class="fa-brands fa-itch-io"></i></a>
+                    </div>
+                    
+                    <div class="project">
+                        <h3>GitLab Issue tool</h3>
+                        <img src="images/issue-tracker.JPG">
+                        <p>The tool was made for in unity to provide users a built-in method to document or manage gitlab issues</p>
+                        <a href="https://github.com/LukasRuee/GitLabXTension" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </section>
+            </section>
+        </body>
+    </main>
 
         <footer>
             <h2>Contact</h2>
@@ -85,5 +93,4 @@
                 <a href="https://github.com/LukasRuee" target="_blank" class="button-link"> <i class="fa-brands fa-github"></i></a>
             </section>
         </footer>
-    </body>
 </html>

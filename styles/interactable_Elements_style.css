@@ -11,10 +11,9 @@
     color: white;
     padding: 10px;
     border-radius: 10px; 
-    margin: 10px;
-    font-size: x-large;
+    margin: 5px;
+    font-size: large;
     transition: transform 0.5s;
-    align-self: flex-end;
 }
 
 .button-link:hover {
