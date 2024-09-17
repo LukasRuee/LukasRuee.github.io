@@ -1,0 +1,17 @@
+:root {
+    --background-color:rgb(48, 48, 48);
+
+    --highlight-bright-color:#f2bfff;
+    --highlight-dark-color:#b434d3;
+    
+    --text-bright-color:#c7c7c7;
+    --text-dark-color:#a0a0a0;
+    
+    --box-shadow-bright-color:#c7c7c7;
+    --box-shadow-dark-color:#a0a0a0;
+    
+    --box-shadow: (10px 10px 10px rgba(0, 0, 0, 0.3));
+    
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-bright-color);
+}

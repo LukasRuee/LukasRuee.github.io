@@ -5,6 +5,19 @@
     justify-content: space-around;
     gap: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    #projects {
+        gap: 10px; 
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center; 
+    
+        margin-top: auto;
+        margin-top: auto;
+    }
+  }
+
 .project {
     display: flex; /* Make sure this is set */
     flex-direction: column;

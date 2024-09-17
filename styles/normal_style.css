@@ -1,18 +1,27 @@
 /* General styling */
 header {
-    font-family: 'Roboto', sans-serif;
-    background-color: #222;
-    color: white;
-    padding: 20px;
+    padding: 30px;
+    margin-bottom: 75px;
+
     text-align: center;
-    border-bottom:8px dashed #564875;
+
+    background-color: var(--background-color);
+    border-bottom:8px dashed #b434d3;
+}
+nav ul{
+
+    gap: 20px; 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; 
+
+    margin-top: auto;
+    margin-top: auto;
 }
 nav ul li {
     display: inline-block;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(90deg, #564875, #222);
     margin: 0;
     padding: 0;
 }
@@ -20,27 +29,21 @@ section {
     padding: 10px;
     margin: 10px;
 }
-h1, h2, h3, h4{
-    color: #c7c7c7;
-}
-p, a{
+p, a, li{
     font-weight: 700;
     line-height: 1.6;
-    margin-bottom: 20px; 
-    color: #a0a0a0;
+    color: var(--text-dark-color);
 }
-li{
-    color: #a0a0a0;
-}
+
 /* Box styling */
 .text-box, .project{
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px;
-    border: 4px dashed #564875; 
-    border-radius: 10px;
+    background-color: var(--background-color);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     width: 80%;
+    border-radius: 10px;
+    padding: 20px;
     margin: 0 auto 40px auto;
+    border: 4px dashed #b434d3; 
     
     opacity: 0; 
     transform: translateY(25px); 
@@ -60,26 +63,25 @@ li{
 }
 
 @keyframes glow { 
-    0% { 
-        border-color:#564875;
+    0% {  
+        border-color:var(--highlight-dark-color);
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     }
     50% { 
-        border-color:#ab60e9;
+        border-color:var(--highlight-bright-color);
         box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
     }
     100% { 
-        border-color:#564875;
+        border-color:var(--highlight-dark-color);
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     }
 }
 
 /* Footer styling */
 footer {
-    text-align: center; 
-    background-color: #222;
     padding: 30px;
-    color: #aaa;
+    border-top:8px dashed #b434d3;
+    text-align: center; 
     font-size: 14px;
-    border-top:8px dashed #564875;
+    background-color: var(--background-color);
 }
