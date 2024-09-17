@@ -2,6 +2,8 @@
 <html lang="en">
 <script src="script.js"></script>
 
+
+<body>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +24,6 @@
         </style>
     </head>
 
-    <body>
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
@@ -30,13 +31,11 @@
             <header>
                 <h1>Welcome to My Game Development Portfolio</h1>
                 
-                <nav>
-                    <ul>
-                        <li><a href="#about" class="button-link">About</a></li>
-                        <li><a href="#projects" class="button-link">Projects</a></li>
-                        <li><a href="#contact" class="button-link">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="button-container">
+                    <a href="#about" class="button-link">About</a>
+                    <a href="#projects" class="button-link">Projects</a>
+                    <a href="#contact" class="button-link">Contact</a>
+                </div>
             </header>
 
             <section id="about">
@@ -50,54 +49,59 @@
                 
                 <div class="text-box">
                     <h2>About this website</h2>
-                    <p>This website is a showcase of my work as a developer. Listed below are some of my projects.</a>
+                    <p>This website is a showcase of my work as a developer.</a>
                 </div>
             </section>
 
-            <section>
-                <section id="projects">
-                    <div class="project">
-                        <h3>This website</h3>
-                        <p>Using basic HTML, CSS and Javascript i created this website. Its a page for me to show my work to the world and get people to know me.</p>
-                    </div>
+            <div class="project">
+                <h1>Projects:</h1>
+                <p>Listed below are some of my projects.</p>
+            </div>
+            
+            <section id="projects">
+                <div class="project">
+                    <h3>This website</h3>
+                    <p>Using basic HTML, CSS and Javascript i created this website. Its a page for me to show my work to the world and get people to know me.</p>
+                </div>
 
-                    <div class="project">
-                        <h3>Reaction Game: Simon says (TBA)</h3>
-                        <p>This game is being developed using Lua, featuring an simon says like game. 
-                            It was built specifically for the PlayData console.</p>
-                        
-                        <div class="button-container">
-                            <a href="https://github.com/LukasRuee/SimonSays" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
-                            <!-- Add more button links here if needed -->
-                        </div>
-                    </div>
+                <div class="project">
+                    <h3>Reaction Game: Simon says (TBA)</h3>
+                    <p>This game is being developed using Lua, featuring an simon says like game. 
+                        It was built specifically for the PlayData console.</p>
                     
-                    <div class="project">
-                        <h3>Endless Runner: Hot Score</h3>
-                        <div class="image-container">
-                            <img src="images/hot-score.JPG" alt="Project Image">
-                        </div>
-                        <p>This game was made for the 29th ScoreJam. Its an endless runner made in Unity with a online leaderboard</p>
-                        <a href="https://dionysusentertainment.itch.io/hot-score" target="_blank" class="button-link"><i class="fa-brands fa-itch-io"></i></a>
+                    <div class="button-container">
+                        <a href="https://github.com/LukasRuee/SimonSays" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
+                        <!-- Add more button links here if needed -->
                     </div>
-                    
-                    <div class="project">
-                        <h3>GitLab Issue tool</h3>
-                        <img src="images/issue-tracker.JPG">
-                        <p>The tool was made for in unity to provide users a built-in method to document or manage gitlab issues</p>
-                        <a href="https://github.com/LukasRuee/GitLabXTension" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
+                </div>
+                
+                <div class="project">
+                    <h3>Endless Runner: Hot Score</h3>
+                    <div class="image-container">
+                        <img src="images/hot-score.JPG" alt="Project Image">
                     </div>
-                </section>
+                    <p>This game was made for the 29th ScoreJam. Its an endless runner made in Unity with a online leaderboard</p>
+                    <a href="https://dionysusentertainment.itch.io/hot-score" target="_blank" class="button-link"><i class="fa-brands fa-itch-io"></i></a>
+                </div>
+                
+                <div class="project">
+                    <h3>GitLab Issue tool</h3>
+                    <img src="images/issue-tracker.JPG">
+                    <p>The tool was made for in unity to provide users a built-in method to document or manage gitlab issues</p>
+                    <a href="https://github.com/LukasRuee/GitLabXTension" target="_blank" class="button-link"><i class="fa-brands fa-github"></i></a>
+                </div>
             </section>
         </body>
-    </main>
-
+        
     <footer>
-        <h2>Contact</h2>
-        <div class="button-container">
-            <a href="mailto:lukas.rueegsegger@gmx.ch" class="button-link"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/lukas-r%C3%BCegsegger/" target="_blank" class="button-link"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/LukasRuee" target="_blank" class="button-link"> <i class="fa-brands fa-github"></i></a>
-        </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="button-container">
+                <a href="mailto:lukas.rueegsegger@gmx.ch" class="button-link"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/lukas-r%C3%BCegsegger/" target="_blank" class="button-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/LukasRuee" target="_blank" class="button-link"> <i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
     </footer>
+</main>
 </html>

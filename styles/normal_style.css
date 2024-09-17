@@ -7,25 +7,13 @@ header {
 
     background-color: var(--background-color);
     border-bottom:8px dashed #b434d3;
-}
-nav ul{
-
-    gap: 20px; 
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; 
-
-    margin-top: auto;
-    margin-top: auto;
-}
-nav ul li {
-    display: inline-block;
+    font-size: large;
 }
 body {
     margin: 0;
     padding: 0;
 }
-section {
+section{
     padding: 10px;
     margin: 10px;
 }

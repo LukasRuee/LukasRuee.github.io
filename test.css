@@ -1,0 +1,12 @@
+.project-title{
+    text-align: center;
+    font-size: xx-large;
+    
+    opacity: 0; 
+    transform: translateY(25px); 
+    transition: opacity 1s ease-out, transform 1s ease-out, box-shadow 1s ease-out;
+}
+.project-title.in-view {
+    opacity: 1;
+    transform: translateY(0); 
+}
