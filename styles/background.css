@@ -10,7 +10,9 @@
     top:0;
     z-index:-1;
 }
-
+.bg {
+    background-attachment: fixed;
+}
 .bg2 {
     animation-direction:alternate-reverse;
     animation-duration:15s;
@@ -18,6 +20,9 @@
 
 .bg3 {
     animation-duration:25s;
+}
+.bg, .bg2, .bg3 {
+    will-change: transform;
 }
 
 .content {
